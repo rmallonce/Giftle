@@ -1,7 +1,11 @@
-body{
+.container{
 
+	display: flex;
 	margin: 0;
 	box-sizing: border-box;
+	flex-direction: column;
+	align-items: center;
+
 
 }
 
@@ -11,15 +15,27 @@ body{
 	display: flex;
 	justify-content: center;
 	margin-top: 78px;
+	flex-direction: column;
+	align-items: center;
 
 }
 
-.product--img{
+.mainImg{
 
 	margin-right: 40px;
 	border-radius: 10px;
 	width: 293px;
 	height: 154px;
+	float: left;
+	margin-left: 16px;
+	margin-top: 16px;
+	flex-direction: row;
+
+}
+
+.mainImg--img{
+
+	margin-top: 16px;
 
 }
 
@@ -37,10 +53,19 @@ max-width: 70%;
 	line-height: 39px;
 	letter-spacing: 0em;
 	margin-bottom: 13px;
+	margin-top: 16px;
 	
 
 
 }
+
+.product--info__subInfo{
+
+	 display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .subInfo--stock{
 
@@ -187,13 +212,13 @@ Button & Reserve Text Styles
 	line-height: 20px;
 	letter-spacing: 0em;
 	margin-left: 9px;
+	margin-right: 31px;
 
 
 }
 
 .purchase--button{
 
-	margin-left: 31px;
 	font-family: Montserrat;
 	font-size: 16px;
 	font-weight: 600;
@@ -224,6 +249,7 @@ Rating Star Styles
 
 	margin-right: 8px;
 	margin-top: 26px;
+	text-align: center;
 
 }
 
@@ -233,6 +259,11 @@ Reseve link styles
 =============================
 */
 
+.linkInfo {
+
+	display: flex;
+
+}
 
 .subInfo--reserve__link{
 
@@ -254,6 +285,8 @@ Reseve link styles
 
 }
 
+.
+
 /*
 =============================
 Sidebar styles
@@ -271,8 +304,14 @@ Sidebar styles
 	line-height: 28px;
 	letter-spacing: 0em;
 	text-align: left;
-
+	margin-right: 16px;
 	margin-top: 79px;
+}
+
+.sideInfo--extra__details{
+
+	max-width: 308px;
+
 }
 
 .details--header{
@@ -373,3 +412,84 @@ Chat styles
 
 
 }
+
+
+/*
+========================================
+Media queries
+========================================
+*/
+
+@media(min-width: 1440px){
+
+	.container{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		align-items: flex-start;
+
+	}
+
+
+	.product{ 
+
+		display: grid;
+		grid-template-rows: 100px 1fr;
+		grid-template-columns: 500px 1fr;
+		grid-template-areas: 
+		"header header"
+		"main sidebar";
+		margin-top: 0;
+
+
+	 }
+
+	 .product--info__header{
+
+	 	grid-area: header;
+
+	 }
+
+	 .product--info__subInfo{
+
+		align-items: flex-start;
+
+	 }
+
+	 .product--info{
+
+	 	grid-area: main;
+	 	align-self: flex-start;
+
+	 }
+
+	 .sideInfo {
+
+	 	grid-area: sidebar;
+
+	 }
+
+	 .subInfo--reserve__rating{
+
+		text-align: left;
+
+	}
+	body{
+		
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	}
+
+
+}
+
+
+	
+	
+
+
+
+	
