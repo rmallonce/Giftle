@@ -236,6 +236,7 @@ Button & Reserve Text Styles
 .purchase--button:hover{
 
 	cursor: pointer;
+	color: white;
 
 }
 
@@ -319,6 +320,7 @@ Sidebar styles
 	padding: 7px 67px;
 	border: 2px solid black;
 	margin-bottom: 0;
+	text-align: center;
 }
 
 .details--specs{
@@ -413,6 +415,11 @@ Chat styles
 
 
 
+}
+
+#chatInput:hover{
+
+	border: 1px solid white;
 }
 
 
