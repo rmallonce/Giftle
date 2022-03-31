@@ -408,6 +408,8 @@ Chat styles
 	width: 264px;
 	border: none;
 	border-radius: 73px;
+	color: white;
+	font-family: Montserrat;
 
 
 
@@ -479,8 +481,12 @@ Media queries
     margin: 0;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+	}
+
+	.container{
+
+		justify-content: center;
+
 	}
 
 
